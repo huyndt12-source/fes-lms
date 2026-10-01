@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 130" width="100%" height="100%" fill="none">
+  <!-- FES Academy Official Master Brand Logo -->
+  <g id="fes-mark">
+    <!-- Top Ribbon: Teal -->
+    <path
+      d="M 4 44
+         L 4 20
+         C 4 8, 12 0, 26 0
+         L 86 32
+         L 86 70
+         L 4 44 Z"
+      fill="#007284"
+    />
+
+    <!-- Middle Ribbon: Golden Yellow -->
+    <path
+      d="M 24 74
+         L 24 61
+         C 24 54, 28 50, 38 54
+         L 86 77
+         L 86 98
+         L 24 74 Z"
+      fill="#f0ad25"
+    />
+
+    <!-- Bottom Ribbon: Warm Orange -->
+    <path
+      d="M 45 104
+         L 45 93
+         C 45 87, 49 84, 57 88
+         L 86 102
+         L 86 122
+         L 45 104 Z"
+      fill="#eb7526"
+    />
+  </g>
+
+  <!-- Wordmark: FES ACADEMY -->
+  <g id="fes-typography" fill="#044b63">
+    <!-- FES -->
+    <text
+      x="102"
+      y="84"
+      font-family="'Be Vietnam Pro', 'Montserrat', 'Inter', -apple-system, sans-serif"
+      font-weight="900"
+      font-size="74"
+      letter-spacing="-1.5"
+    >FES</text>
+
+    <!-- ACADEMY -->
+    <text
+      x="104"
+      y="118"
+      font-family="'Be Vietnam Pro', 'Montserrat', 'Inter', -apple-system, sans-serif"
+      font-weight="800"
+      font-size="20"
+      letter-spacing="5"
+    >ACADEMY</text>
+  </g>
+</svg>

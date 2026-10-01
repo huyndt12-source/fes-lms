@@ -1,0 +1,6 @@
+{
+  "name": "FES Academy LMS",
+  "description": "Professional CFA learning and Mock Exam platform for FES Academy students with real-time test engine, analytics, and question review.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

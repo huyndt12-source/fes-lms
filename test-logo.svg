@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="100%" height="100%">
+  <!-- FES Academy Official Logo -->
+  <g id="fes-icon">
+    <!-- Teal Ribbon (Top) -->
+    <path d="M 68 215 
+             L 68 180 
+             C 68 150, 85 135, 115 138 
+             L 152 156 
+             L 152 255 
+             L 68 215 Z" 
+          fill="#007284" />
+    
+    <!-- Yellow Ribbon (Middle) -->
+    <path d="M 88 244 
+             C 88 234, 95 228, 106 233 
+             L 152 256 
+             L 152 308 
+             L 88 276 
+             Z" 
+          fill="#f0ad25" />
+
+    <!-- Orange Ribbon (Bottom) -->
+    <path d="M 108 296 
+             C 108 286, 115 280, 126 285 
+             L 152 308 
+             L 152 346 
+             L 108 324 
+             Z" 
+          fill="#eb7526" />
+  </g>
+</svg>

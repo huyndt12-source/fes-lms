@@ -1,0 +1,3227 @@
+{
+  "roles": [
+    {
+      "id": "ADMIN",
+      "name": "Super Administrator",
+      "description": "Full access to Admin CMS, user management, and Q-Bank",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "CONTENT_MANAGER",
+      "name": "Content Manager",
+      "description": "Manage Question Bank, import questions, and build Mock Exams",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "INSTRUCTOR",
+      "name": "Course Instructor",
+      "description": "Author courses, upload video lectures, and review student progress",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "STUDENT",
+      "name": "CFA Candidate",
+      "description": "Access Student LMS, take Mock Exams, watch videos, view personal results",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "permissions": [
+    {
+      "id": "qbank:view",
+      "category": "QBANK",
+      "description": "View question bank",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qbank:edit",
+      "category": "QBANK",
+      "description": "Create and edit questions",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qbank:publish",
+      "category": "QBANK",
+      "description": "Publish question versions",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qbank:import",
+      "category": "QBANK",
+      "description": "Import questions via CSV/Excel",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "exam:manage",
+      "category": "EXAMS",
+      "description": "Build and configure mock exams",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "exam:publish",
+      "category": "EXAMS",
+      "description": "Publish/unpublish exams",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "course:manage",
+      "category": "COURSES",
+      "description": "Manage courses and lectures",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "students:view",
+      "category": "STUDENTS",
+      "description": "View student cohorts and attempts",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "system:audit",
+      "category": "SYSTEM",
+      "description": "View audit logs",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "role_permissions": [
+    {
+      "role_id": "ADMIN",
+      "permission_id": "qbank:view",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "qbank:edit",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "qbank:publish",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "qbank:import",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "exam:manage",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "exam:publish",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "course:manage",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "students:view",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "ADMIN",
+      "permission_id": "system:audit",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "CONTENT_MANAGER",
+      "permission_id": "qbank:view",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "CONTENT_MANAGER",
+      "permission_id": "qbank:edit",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "CONTENT_MANAGER",
+      "permission_id": "qbank:publish",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "CONTENT_MANAGER",
+      "permission_id": "qbank:import",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "CONTENT_MANAGER",
+      "permission_id": "exam:manage",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "CONTENT_MANAGER",
+      "permission_id": "exam:publish",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "INSTRUCTOR",
+      "permission_id": "course:manage",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "role_id": "INSTRUCTOR",
+      "permission_id": "students:view",
+      "granted_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "role_id": "ADMIN",
+      "email": "admin@fes.edu.vn",
+      "password_hash": "admin123",
+      "is_active": true,
+      "is_email_verified": true,
+      "last_login_at": "2026-09-30T16:36:27.007Z",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "usr-content-01",
+      "role_id": "CONTENT_MANAGER",
+      "email": "content@fes.edu.vn",
+      "password_hash": "content123",
+      "is_active": true,
+      "is_email_verified": true,
+      "last_login_at": "2026-09-30T16:36:27.007Z",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "usr-instructor-01",
+      "role_id": "INSTRUCTOR",
+      "email": "instructor@fes.edu.vn",
+      "password_hash": "instructor123",
+      "is_active": true,
+      "is_email_verified": true,
+      "last_login_at": "2026-09-30T16:36:27.007Z",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "usr-student-01",
+      "role_id": "STUDENT",
+      "email": "student@fes.edu.vn",
+      "password_hash": "student123",
+      "is_active": true,
+      "is_email_verified": true,
+      "last_login_at": "2026-09-30T16:36:27.007Z",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "usr-std-muoclez7-51hw",
+      "role_id": "STUDENT",
+      "email": "test.student.1790787422995@fesacademy.com.vn",
+      "password_hash": "PENDING_FIREBASE_INVITATION",
+      "is_active": true,
+      "is_email_verified": false,
+      "created_at": "2026-09-30T16:57:02.995Z",
+      "updated_at": "2026-09-30T16:57:02.995Z"
+    },
+    {
+      "id": "usr-std-mup8i858-4qzz",
+      "role_id": "STUDENT",
+      "email": "test.student.1790841021883@fesacademy.com.vn",
+      "password_hash": "PENDING_FIREBASE_INVITATION",
+      "is_active": true,
+      "is_email_verified": false,
+      "created_at": "2026-10-01T07:50:21.884Z",
+      "updated_at": "2026-10-01T07:50:21.884Z"
+    },
+    {
+      "id": "usr-std-mup8ieqk-5x2n",
+      "role_id": "STUDENT",
+      "email": "test.student.1790841030428@fesacademy.com.vn",
+      "password_hash": "PENDING_FIREBASE_INVITATION",
+      "is_active": true,
+      "is_email_verified": false,
+      "created_at": "2026-10-01T07:50:30.428Z",
+      "updated_at": "2026-10-01T07:50:30.428Z"
+    },
+    {
+      "id": "usr-std-mup93ay8-0zo1",
+      "role_id": "STUDENT",
+      "email": "test14.verify.1790842005295@fesacademy.com.vn",
+      "password_hash": "PENDING_FIREBASE_INVITATION",
+      "is_active": true,
+      "is_email_verified": false,
+      "created_at": "2026-10-01T08:06:45.296Z",
+      "updated_at": "2026-10-01T08:06:45.296Z"
+    },
+    {
+      "id": "usr-std-mup96u5f-e4e5",
+      "role_id": "STUDENT",
+      "email": "test15.verify.1790842170147@fesacademy.com.vn",
+      "password_hash": "PENDING_FIREBASE_INVITATION",
+      "is_active": false,
+      "is_email_verified": false,
+      "created_at": "2026-10-01T08:09:30.147Z",
+      "updated_at": "2026-10-01T08:09:30.150Z"
+    }
+  ],
+  "user_profiles": [
+    {
+      "user_id": "usr-admin-01",
+      "full_name": "FES System Admin",
+      "phone_number": "+84 901 234 567",
+      "cfa_level": "Level I",
+      "study_title": "System Administrator",
+      "target_mps": 70,
+      "forecast_score": 85,
+      "readiness_index": 95,
+      "streak_days": 45,
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "user_id": "usr-content-01",
+      "full_name": "Trần Thị Thu Thảo, CFA",
+      "phone_number": "+84 912 345 678",
+      "cfa_level": "Level I",
+      "study_title": "Head of Content & Examinations",
+      "target_mps": 70,
+      "forecast_score": 90,
+      "readiness_index": 98,
+      "streak_days": 60,
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "user_id": "usr-instructor-01",
+      "full_name": "Nguyễn Tiến Dũng, CFA",
+      "phone_number": "+84 987 654 321",
+      "cfa_level": "Level I",
+      "study_title": "Senior Portfolio Manager & Lead Lecturer",
+      "target_mps": 70,
+      "forecast_score": 92,
+      "readiness_index": 99,
+      "streak_days": 120,
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "user_id": "usr-student-01",
+      "full_name": "Nguyễn Văn An",
+      "phone_number": "+84 933 111 222",
+      "target_exam_date": "2026-11-15",
+      "cfa_level": "Level I",
+      "study_title": "CFA® Candidate (Nov 2026 Sitting)",
+      "target_mps": 70,
+      "forecast_score": 74.4,
+      "readiness_index": 78,
+      "streak_days": 14,
+      "last_active_date": "2026-09-30",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "user_id": "usr-std-muoclez7-51hw",
+      "full_name": "Trần Minh Quân",
+      "phone_number": "+84912345678",
+      "target_exam_date": "Nov 2026",
+      "cfa_level": "Level I",
+      "study_title": "CFA Level I Candidate (Nov 2026)",
+      "target_mps": 70,
+      "forecast_score": 0,
+      "readiness_index": 0,
+      "streak_days": 0,
+      "updated_at": "2026-09-30T16:57:02.995Z"
+    },
+    {
+      "user_id": "usr-std-mup8i858-4qzz",
+      "full_name": "Trần Minh Quân",
+      "phone_number": "+84912345678",
+      "target_exam_date": "Nov 2026",
+      "cfa_level": "Level I",
+      "study_title": "CFA Level I Candidate (Nov 2026)",
+      "target_mps": 70,
+      "forecast_score": 0,
+      "readiness_index": 0,
+      "streak_days": 0,
+      "updated_at": "2026-10-01T07:50:21.884Z"
+    },
+    {
+      "user_id": "usr-std-mup8ieqk-5x2n",
+      "full_name": "Trần Minh Quân",
+      "phone_number": "+84912345678",
+      "target_exam_date": "Nov 2026",
+      "cfa_level": "Level I",
+      "study_title": "CFA Level I Candidate (Nov 2026)",
+      "target_mps": 70,
+      "forecast_score": 0,
+      "readiness_index": 0,
+      "streak_days": 0,
+      "updated_at": "2026-10-01T07:50:30.428Z"
+    },
+    {
+      "user_id": "usr-std-mup93ay8-0zo1",
+      "full_name": "Trần Minh Quân (Updated)",
+      "phone_number": "+84988776655",
+      "target_exam_date": "May 2027",
+      "cfa_level": "Level II",
+      "study_title": "CFA Level I Candidate (Nov 2026)",
+      "target_mps": 70,
+      "forecast_score": 0,
+      "readiness_index": 0,
+      "streak_days": 0,
+      "updated_at": "2026-10-01T08:06:45.299Z"
+    },
+    {
+      "user_id": "usr-std-mup96u5f-e4e5",
+      "full_name": "Trần Minh Quân Test15",
+      "phone_number": "+84912345678",
+      "target_exam_date": "Nov 2026",
+      "cfa_level": "Level I",
+      "study_title": "CFA Level I Candidate (Nov 2026)",
+      "target_mps": 70,
+      "forecast_score": 0,
+      "readiness_index": 0,
+      "streak_days": 0,
+      "updated_at": "2026-10-01T08:09:30.147Z"
+    }
+  ],
+  "topics": [
+    {
+      "id": "ethics",
+      "cfa_level": "Level I",
+      "name": "Ethical & Professional Standards",
+      "code": "ETH",
+      "weight_min": 15,
+      "weight_max": 20,
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "quant",
+      "cfa_level": "Level I",
+      "name": "Quantitative Methods",
+      "code": "QM",
+      "weight_min": 6,
+      "weight_max": 9,
+      "display_order": 2,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "econ",
+      "cfa_level": "Level I",
+      "name": "Economics",
+      "code": "ECON",
+      "weight_min": 6,
+      "weight_max": 9,
+      "display_order": 3,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "fra",
+      "cfa_level": "Level I",
+      "name": "Financial Reporting & Analysis (FRA)",
+      "code": "FRA",
+      "weight_min": 11,
+      "weight_max": 14,
+      "display_order": 4,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "corp-issuers",
+      "cfa_level": "Level I",
+      "name": "Corporate Issuers",
+      "code": "CI",
+      "weight_min": 6,
+      "weight_max": 9,
+      "display_order": 5,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "equity",
+      "cfa_level": "Level I",
+      "name": "Equity Investments",
+      "code": "EQ",
+      "weight_min": 11,
+      "weight_max": 14,
+      "display_order": 6,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "fixed-income",
+      "cfa_level": "Level I",
+      "name": "Fixed Income",
+      "code": "FI",
+      "weight_min": 11,
+      "weight_max": 14,
+      "display_order": 7,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "derivatives",
+      "cfa_level": "Level I",
+      "name": "Derivatives",
+      "code": "DER",
+      "weight_min": 5,
+      "weight_max": 8,
+      "display_order": 8,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "alt-investments",
+      "cfa_level": "Level I",
+      "name": "Alternative Investments",
+      "code": "AI",
+      "weight_min": 7,
+      "weight_max": 10,
+      "display_order": 9,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "portfolio-mgmt",
+      "cfa_level": "Level I",
+      "name": "Portfolio Management",
+      "code": "PM",
+      "weight_min": 8,
+      "weight_max": 12,
+      "display_order": 10,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "subtopics": [
+    {
+      "id": "sub-fra-19",
+      "topic_id": "fra",
+      "reading_number": 19,
+      "name": "Leases & Long-Term Liabilities",
+      "los_code": "LOS 19.a",
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "sub-fra-20",
+      "topic_id": "fra",
+      "reading_number": 20,
+      "name": "Income Taxes & Deferred Tax Assets",
+      "los_code": "LOS 20.b",
+      "display_order": 2,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "sub-fi-42",
+      "topic_id": "fixed-income",
+      "reading_number": 42,
+      "name": "Duration, Convexity and Immunization",
+      "los_code": "LOS 42.c",
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "sub-fi-43",
+      "topic_id": "fixed-income",
+      "reading_number": 43,
+      "name": "Credit Analysis Models & Spreads",
+      "los_code": "LOS 43.a",
+      "display_order": 2,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "sub-eq-35",
+      "topic_id": "equity",
+      "reading_number": 35,
+      "name": "Discounted Dividend Valuation",
+      "los_code": "LOS 35.d",
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "sub-eth-01",
+      "topic_id": "ethics",
+      "reading_number": 1,
+      "name": "Code of Ethics & Standards of Professional Conduct",
+      "los_code": "LOS 1.b",
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "sub-qm-06",
+      "topic_id": "quant",
+      "reading_number": 6,
+      "name": "Time Value of Money & Cash Flow Additivity",
+      "los_code": "LOS 6.a",
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "cfa-l1-fra",
+      "topic_id": "fra",
+      "title": "Financial Statement Analysis (FRA)",
+      "level": "Level I",
+      "description": "Chinh phục chuyên sâu Báo cáo Tài chính, IFRS vs US GAAP, Phân tích Thuế hoãn lại và Thuê tài sản.",
+      "instructor_name": "Nguyễn Tiến Dũng, CFA",
+      "instructor_title": "Senior Portfolio Manager",
+      "badge": "Trọng số cao (11-14%)",
+      "is_published": true,
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "course_modules": [
+    {
+      "id": "mod-fra-01",
+      "course_id": "cfa-l1-fra",
+      "title": "Module 01: Giới thiệu Phân tích Báo cáo Tài chính",
+      "description": "Nền tảng các chuẩn mực kế toán IFRS & US GAAP, cấu trúc bộ BCTC hợp nhất.",
+      "display_order": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "mod-fra-02",
+      "course_id": "cfa-l1-fra",
+      "title": "Module 02: Báo cáo Kết quả Kinh doanh & Lưu chuyển Tiền tệ",
+      "description": "Ghi nhận doanh thu, phân loại chi phí, chiết khấu và phân tích dòng tiền hoạt động.",
+      "display_order": 2,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "mod-fra-03",
+      "course_id": "cfa-l1-fra",
+      "title": "Module 03: Thuê tài sản (Leases) & Nợ dài hạn",
+      "description": "IFRS 16 vs US GAAP Topic 842, quyền sử dụng tài sản (ROU Asset) và nghĩa vụ nợ thuê.",
+      "display_order": 3,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "les-fra-01",
+      "module_id": "mod-fra-01",
+      "course_id": "cfa-l1-fra",
+      "subtopic_id": "sub-fra-19",
+      "title": "Lesson 01: Tổng quan Khung pháp lý & Chuẩn mực IFRS",
+      "los_code": "LOS 18.a",
+      "description": "Hiểu rõ các nguyên tắc cốt lõi của IFRS Framework và US GAAP Conceptual Framework.",
+      "key_takeaways": [
+        "Tính hữu ích của thông tin: Trung thực và Thích hợp",
+        "Sự khác biệt chính giữa US GAAP và IFRS về việc đánh giá lại tài sản (Revaluation)"
+      ],
+      "display_order": 1,
+      "is_free_preview": true,
+      "is_published": true,
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "les-fra-02",
+      "module_id": "mod-fra-02",
+      "course_id": "cfa-l1-fra",
+      "title": "Lesson 02: Revenue Recognition Under IFRS 15",
+      "los_code": "LOS 19.a",
+      "description": "Mô hình 5 bước ghi nhận doanh thu từ hợp đồng với khách hàng.",
+      "key_takeaways": [
+        "Xác định nghĩa vụ thực hiện riêng biệt (Performance Obligations)",
+        "Phân bổ giá giao dịch dựa trên giá bán độc lập tương đối (Standalone Selling Price)"
+      ],
+      "display_order": 2,
+      "is_free_preview": false,
+      "is_published": true,
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "les-fra-03",
+      "module_id": "mod-fra-03",
+      "course_id": "cfa-l1-fra",
+      "subtopic_id": "sub-fra-19",
+      "title": "Lesson 03: Phân tích Chuyên sâu Kế toán Thuê tài sản (IFRS 16)",
+      "los_code": "LOS 19.b",
+      "description": "Xử lý Right-of-Use Asset (ROU) và Lease Liability trên bảng cân đối kế toán.",
+      "key_takeaways": [
+        "IFRS 16 yêu cầu ghi nhận toàn bộ hợp đồng thuê vào Bảng CĐKT (trừ giá trị nhỏ / ngắn hạn)",
+        "EBITDA tăng lên vì chi phí thuê chuyển thành khấu hao ROU và chi phí lãi vay",
+        "Dòng tiền hoạt động CFO tăng do phần hoàn trả nợ gốc thuộc CFF"
+      ],
+      "display_order": 3,
+      "is_free_preview": false,
+      "is_published": true,
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-fra-01",
+      "lesson_id": "les-fra-01",
+      "provider": "hls",
+      "video_url": "https://storage.googleapis.com/fes-lms-assets/videos/fra-les-01.m3u8",
+      "duration_seconds": 2400,
+      "resolution_modes": [
+        "360p",
+        "720p",
+        "1080p"
+      ],
+      "status": "ready",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "vid-fra-02",
+      "lesson_id": "les-fra-02",
+      "provider": "hls",
+      "video_url": "https://storage.googleapis.com/fes-lms-assets/videos/fra-les-02.m3u8",
+      "duration_seconds": 2700,
+      "resolution_modes": [
+        "360p",
+        "720p",
+        "1080p"
+      ],
+      "status": "ready",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "vid-fra-03",
+      "lesson_id": "les-fra-03",
+      "provider": "hls",
+      "video_url": "https://storage.googleapis.com/fes-lms-assets/videos/fra-les-03.m3u8",
+      "duration_seconds": 2950,
+      "resolution_modes": [
+        "360p",
+        "720p",
+        "1080p"
+      ],
+      "status": "ready",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    }
+  ],
+  "lesson_resources": [],
+  "questions": [
+    {
+      "id": "q-seed-1",
+      "question_code": "Q-FRA-001",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases & Long-Term Liabilities",
+      "difficulty": "Medium",
+      "current_version_id": "qv-seed-1-v1",
+      "status": "Active",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "q-seed-2",
+      "question_code": "Q-FRA-002",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-20",
+      "los_code": "LOS 20.b",
+      "reading": "Reading 20: Income Taxes",
+      "difficulty": "Hard",
+      "current_version_id": "qv-seed-2-v1",
+      "status": "Active",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "q-seed-3",
+      "question_code": "Q-FI-001",
+      "topic_id": "fixed-income",
+      "subtopic_id": "sub-fi-42",
+      "los_code": "LOS 42.c",
+      "reading": "Reading 42: Duration & Convexity",
+      "difficulty": "Medium",
+      "current_version_id": "qv-seed-3-v1",
+      "status": "Active",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "q-seed-4",
+      "question_code": "Q-ETH-001",
+      "topic_id": "ethics",
+      "subtopic_id": "sub-eth-01",
+      "los_code": "LOS 1.b",
+      "reading": "Reading 01: Code of Ethics and Standards",
+      "difficulty": "Easy",
+      "current_version_id": "qv-seed-4-v1",
+      "status": "Active",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "q-seed-5",
+      "question_code": "Q-EQ-001",
+      "topic_id": "equity",
+      "subtopic_id": "sub-eq-35",
+      "los_code": "LOS 35.d",
+      "reading": "Reading 35: Discounted Dividend Valuation",
+      "difficulty": "Medium",
+      "current_version_id": "qv-seed-5-v1",
+      "status": "Active",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "q-1790786187029",
+      "question_code": "TEST-Q001-1790786187028",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases",
+      "difficulty": "Medium",
+      "current_version_id": "qv-q-1790786187029-v1",
+      "status": "Active",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:36:27.029Z",
+      "updated_at": "2026-09-30T16:36:27.029Z"
+    },
+    {
+      "id": "q-1790786220936",
+      "question_code": "TEST-Q001-1790786220936",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases",
+      "difficulty": "Medium",
+      "current_version_id": "qv-q-1790786220936-v3",
+      "status": "Active",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:37:00.936Z",
+      "updated_at": "2026-09-30T16:37:00.959Z"
+    },
+    {
+      "id": "q-1790786504279",
+      "question_code": "TEST-Q001-1790786504278",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases",
+      "difficulty": "Medium",
+      "current_version_id": "qv-q-1790786504279-v3",
+      "status": "Active",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:41:44.279Z",
+      "updated_at": "2026-09-30T16:41:44.293Z"
+    },
+    {
+      "id": "q-1790786637398",
+      "question_code": "TEST-Q001-1790786637398",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases",
+      "difficulty": "Medium",
+      "current_version_id": "qv-q-1790786637398-v3",
+      "status": "Active",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:43:57.398Z",
+      "updated_at": "2026-09-30T16:43:57.414Z"
+    },
+    {
+      "id": "q-1790787422917",
+      "question_code": "TEST-Q001-1790787422916",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases",
+      "difficulty": "Medium",
+      "current_version_id": "qv-q-1790787422917-v3",
+      "status": "Active",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:57:02.916Z",
+      "updated_at": "2026-09-30T16:57:02.988Z"
+    },
+    {
+      "id": "q-1790841021842",
+      "question_code": "TEST-Q001-1790841021841",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases",
+      "difficulty": "Medium",
+      "current_version_id": "qv-q-1790841021842-v3",
+      "status": "Active",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:21.841Z",
+      "updated_at": "2026-10-01T07:50:21.877Z"
+    },
+    {
+      "id": "q-1790841030390",
+      "question_code": "TEST-Q001-1790841030390",
+      "topic_id": "fra",
+      "subtopic_id": "sub-fra-19",
+      "los_code": "LOS 19.b",
+      "reading": "Reading 19: Leases",
+      "difficulty": "Medium",
+      "current_version_id": "qv-q-1790841030390-v3",
+      "status": "Active",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:30.390Z",
+      "updated_at": "2026-10-01T07:50:30.421Z"
+    }
+  ],
+  "question_versions": [
+    {
+      "id": "qv-seed-1-v1",
+      "question_id": "q-seed-1",
+      "version_number": 1,
+      "prompt": "Under IFRS 16, compared to treating a lease as an operating lease under prior standards, recognizing the lease on the lessee’s balance sheet will most likely cause which of the following metrics to increase in the early years of the lease?",
+      "correct_answer": "B",
+      "explanation": "Under IFRS 16, lease payments are partitioned into interest expense (which reduces CFO or CFF depending on accounting policy) and principal repayment (which is classified as financing cash outflow, CFF). Previously, the entire operating lease payment was a deduction from CFO. Moving principal payments from CFO to CFF causes reported CFO to increase.",
+      "change_summary": "Initial release from CFA 2026 Core Syllabus.",
+      "is_published": true,
+      "published_at": "2026-09-30T16:36:27.007Z",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qv-seed-2-v1",
+      "question_id": "q-seed-2",
+      "version_number": 1,
+      "prompt": "A company reports accounting depreciation of $45,000 and tax depreciation of $65,000 for the current year. Assuming an enacted statutory tax rate of 25%, the effect of this temporary difference on the balance sheet is most accurately described as:",
+      "correct_answer": "A",
+      "explanation": "Tax depreciation ($65,000) exceeds financial statement depreciation ($45,000) by $20,000. This creates a taxable temporary difference because the carrying amount of the asset exceeds its tax base. Temporary difference of $20,000 × 25% tax rate = $5,000 increase in Deferred Tax Liability (DTL).",
+      "change_summary": "Initial release from CFA 2026 Core Syllabus.",
+      "is_published": true,
+      "published_at": "2026-09-30T16:36:27.007Z",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qv-seed-3-v1",
+      "question_id": "q-seed-3",
+      "version_number": 1,
+      "prompt": "An investor holds an 8-year annual-pay coupon bond with an annual modified duration of 6.2 years and an annual convexity of 48.0. If market yields increase by 100 basis points (+1.00%), the estimated percentage price change of the bond using both duration and convexity is closest to:",
+      "correct_answer": "B",
+      "explanation": "%ΔPrice ≈ -ModDur × Δy + 0.5 × Convexity × (Δy)^2 = -6.2 × (0.01) + 0.5 × 48.0 × (0.01)^2 = -0.0620 + 0.0024 = -0.0596, or -5.96%. Convexity mitigates the price decline resulting from an interest rate increase.",
+      "change_summary": "Initial release from CFA 2026 Core Syllabus.",
+      "is_published": true,
+      "published_at": "2026-09-30T16:36:27.007Z",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qv-seed-4-v1",
+      "question_id": "q-seed-4",
+      "version_number": 1,
+      "prompt": "According to Standard I(A) Knowledge of the Law, if an applicable local law or regulation conflicts with the CFA Institute Code and Standards, members and candidates must comply with:",
+      "correct_answer": "B",
+      "explanation": "Under Standard I(A), members and candidates must obey the more strict law, rule, or regulation (including the Code and Standards).",
+      "change_summary": "Initial release from CFA 2026 Core Syllabus.",
+      "is_published": true,
+      "published_at": "2026-09-30T16:36:27.007Z",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qv-seed-5-v1",
+      "question_id": "q-seed-5",
+      "version_number": 1,
+      "prompt": "A company recently paid an annual dividend of $2.50 per share (D0). Dividends are projected to grow indefinitely at a constant rate of 4.5% per year. If the required return on equity is 9.5%, the intrinsic value of the share using the Gordon Growth Model is closest to:",
+      "correct_answer": "B",
+      "explanation": "D1 = D0 × (1 + g) = $2.50 × 1.045 = $2.6125. P0 = D1 / (r - g) = $2.6125 / (0.095 - 0.045) = $2.6125 / 0.05 = $52.25.",
+      "change_summary": "Initial release from CFA 2026 Core Syllabus.",
+      "is_published": true,
+      "published_at": "2026-09-30T16:36:27.007Z",
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "qv-q-1790786187029-v1",
+      "question_id": "q-1790786187029",
+      "version_number": 1,
+      "prompt": "Original Prompt Q001 Version 1: What is the impact of lease capitalization on CFO?",
+      "correct_answer": "B",
+      "explanation": "Explanation v1: Principal is classified under CFF.",
+      "change_summary": "Initial question creation",
+      "is_published": true,
+      "published_at": "2026-09-30T16:36:27.029Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:36:27.029Z"
+    },
+    {
+      "id": "qv-q-1790786220936-v1",
+      "question_id": "q-1790786220936",
+      "version_number": 1,
+      "prompt": "Original Prompt Q001 Version 1: What is the impact of lease capitalization on CFO?",
+      "correct_answer": "B",
+      "explanation": "Explanation v1: Principal is classified under CFF.",
+      "change_summary": "Initial question creation",
+      "is_published": true,
+      "published_at": "2026-09-30T16:37:00.936Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:37:00.936Z"
+    },
+    {
+      "id": "qv-q-1790786220936-v2",
+      "question_id": "q-1790786220936",
+      "version_number": 2,
+      "prompt": "Updated Prompt Q001 Version 2: Under revised IFRS 16 rules, how does CFO change?",
+      "correct_answer": "B",
+      "explanation": "Explanation v2: Updated detailed accounting rationale.",
+      "change_summary": "Curriculum update to version 2",
+      "is_published": true,
+      "published_at": "2026-09-30T16:37:00.942Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:37:00.942Z"
+    },
+    {
+      "id": "qv-q-1790786220936-v3",
+      "question_id": "q-1790786220936",
+      "version_number": 3,
+      "prompt": "Prompt Q001 Version 3: Future Revision for 2027 Syllabus",
+      "correct_answer": "B",
+      "explanation": "Explanation v3.",
+      "change_summary": "Advance 2027 draft",
+      "is_published": true,
+      "published_at": "2026-09-30T16:37:00.959Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:37:00.959Z"
+    },
+    {
+      "id": "qv-q-1790786504279-v1",
+      "question_id": "q-1790786504279",
+      "version_number": 1,
+      "prompt": "Original Prompt Q001 Version 1: What is the impact of lease capitalization on CFO?",
+      "correct_answer": "B",
+      "explanation": "Explanation v1: Principal is classified under CFF.",
+      "change_summary": "Initial question creation",
+      "is_published": true,
+      "published_at": "2026-09-30T16:41:44.279Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:41:44.279Z"
+    },
+    {
+      "id": "qv-q-1790786504279-v2",
+      "question_id": "q-1790786504279",
+      "version_number": 2,
+      "prompt": "Updated Prompt Q001 Version 2: Under revised IFRS 16 rules, how does CFO change?",
+      "correct_answer": "B",
+      "explanation": "Explanation v2: Updated detailed accounting rationale.",
+      "change_summary": "Curriculum update to version 2",
+      "is_published": true,
+      "published_at": "2026-09-30T16:41:44.285Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:41:44.285Z"
+    },
+    {
+      "id": "qv-q-1790786504279-v3",
+      "question_id": "q-1790786504279",
+      "version_number": 3,
+      "prompt": "Prompt Q001 Version 3: Future Revision for 2027 Syllabus",
+      "correct_answer": "B",
+      "explanation": "Explanation v3.",
+      "change_summary": "Advance 2027 draft",
+      "is_published": true,
+      "published_at": "2026-09-30T16:41:44.293Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:41:44.293Z"
+    },
+    {
+      "id": "qv-q-1790786637398-v1",
+      "question_id": "q-1790786637398",
+      "version_number": 1,
+      "prompt": "Original Prompt Q001 Version 1: What is the impact of lease capitalization on CFO?",
+      "correct_answer": "B",
+      "explanation": "Explanation v1: Principal is classified under CFF.",
+      "change_summary": "Initial question creation",
+      "is_published": true,
+      "published_at": "2026-09-30T16:43:57.398Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:43:57.398Z"
+    },
+    {
+      "id": "qv-q-1790786637398-v2",
+      "question_id": "q-1790786637398",
+      "version_number": 2,
+      "prompt": "Updated Prompt Q001 Version 2: Under revised IFRS 16 rules, how does CFO change?",
+      "correct_answer": "B",
+      "explanation": "Explanation v2: Updated detailed accounting rationale.",
+      "change_summary": "Curriculum update to version 2",
+      "is_published": true,
+      "published_at": "2026-09-30T16:43:57.405Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:43:57.405Z"
+    },
+    {
+      "id": "qv-q-1790786637398-v3",
+      "question_id": "q-1790786637398",
+      "version_number": 3,
+      "prompt": "Prompt Q001 Version 3: Future Revision for 2027 Syllabus",
+      "correct_answer": "B",
+      "explanation": "Explanation v3.",
+      "change_summary": "Advance 2027 draft",
+      "is_published": true,
+      "published_at": "2026-09-30T16:43:57.414Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:43:57.414Z"
+    },
+    {
+      "id": "qv-q-1790787422917-v1",
+      "question_id": "q-1790787422917",
+      "version_number": 1,
+      "prompt": "Original Prompt Q001 Version 1: What is the impact of lease capitalization on CFO?",
+      "correct_answer": "B",
+      "explanation": "Explanation v1: Principal is classified under CFF.",
+      "change_summary": "Initial question creation",
+      "is_published": true,
+      "published_at": "2026-09-30T16:57:02.916Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:57:02.916Z"
+    },
+    {
+      "id": "qv-q-1790787422917-v2",
+      "question_id": "q-1790787422917",
+      "version_number": 2,
+      "prompt": "Updated Prompt Q001 Version 2: Under revised IFRS 16 rules, how does CFO change?",
+      "correct_answer": "B",
+      "explanation": "Explanation v2: Updated detailed accounting rationale.",
+      "change_summary": "Curriculum update to version 2",
+      "is_published": true,
+      "published_at": "2026-09-30T16:57:02.926Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:57:02.926Z"
+    },
+    {
+      "id": "qv-q-1790787422917-v3",
+      "question_id": "q-1790787422917",
+      "version_number": 3,
+      "prompt": "Prompt Q001 Version 3: Future Revision for 2027 Syllabus",
+      "correct_answer": "B",
+      "explanation": "Explanation v3.",
+      "change_summary": "Advance 2027 draft",
+      "is_published": true,
+      "published_at": "2026-09-30T16:57:02.988Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:57:02.988Z"
+    },
+    {
+      "id": "qv-q-1790841021842-v1",
+      "question_id": "q-1790841021842",
+      "version_number": 1,
+      "prompt": "Original Prompt Q001 Version 1: What is the impact of lease capitalization on CFO?",
+      "correct_answer": "B",
+      "explanation": "Explanation v1: Principal is classified under CFF.",
+      "change_summary": "Initial question creation",
+      "is_published": true,
+      "published_at": "2026-10-01T07:50:21.841Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:21.841Z"
+    },
+    {
+      "id": "qv-q-1790841021842-v2",
+      "question_id": "q-1790841021842",
+      "version_number": 2,
+      "prompt": "Updated Prompt Q001 Version 2: Under revised IFRS 16 rules, how does CFO change?",
+      "correct_answer": "B",
+      "explanation": "Explanation v2: Updated detailed accounting rationale.",
+      "change_summary": "Curriculum update to version 2",
+      "is_published": true,
+      "published_at": "2026-10-01T07:50:21.852Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:21.852Z"
+    },
+    {
+      "id": "qv-q-1790841021842-v3",
+      "question_id": "q-1790841021842",
+      "version_number": 3,
+      "prompt": "Prompt Q001 Version 3: Future Revision for 2027 Syllabus",
+      "correct_answer": "B",
+      "explanation": "Explanation v3.",
+      "change_summary": "Advance 2027 draft",
+      "is_published": true,
+      "published_at": "2026-10-01T07:50:21.877Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:21.877Z"
+    },
+    {
+      "id": "qv-q-1790841030390-v1",
+      "question_id": "q-1790841030390",
+      "version_number": 1,
+      "prompt": "Original Prompt Q001 Version 1: What is the impact of lease capitalization on CFO?",
+      "correct_answer": "B",
+      "explanation": "Explanation v1: Principal is classified under CFF.",
+      "change_summary": "Initial question creation",
+      "is_published": true,
+      "published_at": "2026-10-01T07:50:30.390Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:30.390Z"
+    },
+    {
+      "id": "qv-q-1790841030390-v2",
+      "question_id": "q-1790841030390",
+      "version_number": 2,
+      "prompt": "Updated Prompt Q001 Version 2: Under revised IFRS 16 rules, how does CFO change?",
+      "correct_answer": "B",
+      "explanation": "Explanation v2: Updated detailed accounting rationale.",
+      "change_summary": "Curriculum update to version 2",
+      "is_published": true,
+      "published_at": "2026-10-01T07:50:30.397Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:30.397Z"
+    },
+    {
+      "id": "qv-q-1790841030390-v3",
+      "question_id": "q-1790841030390",
+      "version_number": 3,
+      "prompt": "Prompt Q001 Version 3: Future Revision for 2027 Syllabus",
+      "correct_answer": "B",
+      "explanation": "Explanation v3.",
+      "change_summary": "Advance 2027 draft",
+      "is_published": true,
+      "published_at": "2026-10-01T07:50:30.421Z",
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:30.421Z"
+    }
+  ],
+  "question_options": [
+    {
+      "id": "opt-qv-seed-1-v1-A",
+      "question_version_id": "qv-seed-1-v1",
+      "option_key": "A",
+      "option_text": "Interest coverage ratio (EBIT / Interest expense)"
+    },
+    {
+      "id": "opt-qv-seed-1-v1-B",
+      "question_version_id": "qv-seed-1-v1",
+      "option_key": "B",
+      "option_text": "Operating cash flow (CFO)"
+    },
+    {
+      "id": "opt-qv-seed-1-v1-C",
+      "question_version_id": "qv-seed-1-v1",
+      "option_key": "C",
+      "option_text": "Return on assets (ROA)"
+    },
+    {
+      "id": "opt-qv-seed-2-v1-A",
+      "question_version_id": "qv-seed-2-v1",
+      "option_key": "A",
+      "option_text": "An increase in a Deferred Tax Liability (DTL) of $5,000."
+    },
+    {
+      "id": "opt-qv-seed-2-v1-B",
+      "question_version_id": "qv-seed-2-v1",
+      "option_key": "B",
+      "option_text": "An increase in a Deferred Tax Asset (DTA) of $5,000."
+    },
+    {
+      "id": "opt-qv-seed-2-v1-C",
+      "question_version_id": "qv-seed-2-v1",
+      "option_key": "C",
+      "option_text": "A decrease in Taxes Payable of $20,000."
+    },
+    {
+      "id": "opt-qv-seed-3-v1-A",
+      "question_version_id": "qv-seed-3-v1",
+      "option_key": "A",
+      "option_text": "-6.20%"
+    },
+    {
+      "id": "opt-qv-seed-3-v1-B",
+      "question_version_id": "qv-seed-3-v1",
+      "option_key": "B",
+      "option_text": "-5.96%"
+    },
+    {
+      "id": "opt-qv-seed-3-v1-C",
+      "question_version_id": "qv-seed-3-v1",
+      "option_key": "C",
+      "option_text": "-6.44%"
+    },
+    {
+      "id": "opt-qv-seed-4-v1-A",
+      "question_version_id": "qv-seed-4-v1",
+      "option_key": "A",
+      "option_text": "The local law or regulation in all cases."
+    },
+    {
+      "id": "opt-qv-seed-4-v1-B",
+      "question_version_id": "qv-seed-4-v1",
+      "option_key": "B",
+      "option_text": "The stricter of the applicable law, regulation, or the Code and Standards."
+    },
+    {
+      "id": "opt-qv-seed-4-v1-C",
+      "question_version_id": "qv-seed-4-v1",
+      "option_key": "C",
+      "option_text": "The Code and Standards regardless of local legal penalties."
+    },
+    {
+      "id": "opt-qv-seed-5-v1-A",
+      "question_version_id": "qv-seed-5-v1",
+      "option_key": "A",
+      "option_text": "$50.00"
+    },
+    {
+      "id": "opt-qv-seed-5-v1-B",
+      "question_version_id": "qv-seed-5-v1",
+      "option_key": "B",
+      "option_text": "$52.25"
+    },
+    {
+      "id": "opt-qv-seed-5-v1-C",
+      "question_version_id": "qv-seed-5-v1",
+      "option_key": "C",
+      "option_text": "$55.00"
+    },
+    {
+      "id": "opt-qv-q-1790786187029-v1-A",
+      "question_version_id": "qv-q-1790786187029-v1",
+      "option_key": "A",
+      "option_text": "CFO decreases"
+    },
+    {
+      "id": "opt-qv-q-1790786187029-v1-B",
+      "question_version_id": "qv-q-1790786187029-v1",
+      "option_key": "B",
+      "option_text": "CFO increases"
+    },
+    {
+      "id": "opt-qv-q-1790786187029-v1-C",
+      "question_version_id": "qv-q-1790786187029-v1",
+      "option_key": "C",
+      "option_text": "CFO is unchanged"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v1-A",
+      "question_version_id": "qv-q-1790786220936-v1",
+      "option_key": "A",
+      "option_text": "CFO decreases"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v1-B",
+      "question_version_id": "qv-q-1790786220936-v1",
+      "option_key": "B",
+      "option_text": "CFO increases"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v1-C",
+      "question_version_id": "qv-q-1790786220936-v1",
+      "option_key": "C",
+      "option_text": "CFO is unchanged"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v2-A",
+      "question_version_id": "qv-q-1790786220936-v2",
+      "option_key": "A",
+      "option_text": "CFO declines significantly"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v2-B",
+      "question_version_id": "qv-q-1790786220936-v2",
+      "option_key": "B",
+      "option_text": "CFO increases due to financing reclassification"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v2-C",
+      "question_version_id": "qv-q-1790786220936-v2",
+      "option_key": "C",
+      "option_text": "CFO stays constant"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v3-A",
+      "question_version_id": "qv-q-1790786220936-v3",
+      "option_key": "A",
+      "option_text": "Option A v3"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v3-B",
+      "question_version_id": "qv-q-1790786220936-v3",
+      "option_key": "B",
+      "option_text": "Option B v3"
+    },
+    {
+      "id": "opt-qv-q-1790786220936-v3-C",
+      "question_version_id": "qv-q-1790786220936-v3",
+      "option_key": "C",
+      "option_text": "Option C v3"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v1-A",
+      "question_version_id": "qv-q-1790786504279-v1",
+      "option_key": "A",
+      "option_text": "CFO decreases"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v1-B",
+      "question_version_id": "qv-q-1790786504279-v1",
+      "option_key": "B",
+      "option_text": "CFO increases"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v1-C",
+      "question_version_id": "qv-q-1790786504279-v1",
+      "option_key": "C",
+      "option_text": "CFO is unchanged"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v2-A",
+      "question_version_id": "qv-q-1790786504279-v2",
+      "option_key": "A",
+      "option_text": "CFO declines significantly"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v2-B",
+      "question_version_id": "qv-q-1790786504279-v2",
+      "option_key": "B",
+      "option_text": "CFO increases due to financing reclassification"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v2-C",
+      "question_version_id": "qv-q-1790786504279-v2",
+      "option_key": "C",
+      "option_text": "CFO stays constant"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v3-A",
+      "question_version_id": "qv-q-1790786504279-v3",
+      "option_key": "A",
+      "option_text": "Option A v3"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v3-B",
+      "question_version_id": "qv-q-1790786504279-v3",
+      "option_key": "B",
+      "option_text": "Option B v3"
+    },
+    {
+      "id": "opt-qv-q-1790786504279-v3-C",
+      "question_version_id": "qv-q-1790786504279-v3",
+      "option_key": "C",
+      "option_text": "Option C v3"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v1-A",
+      "question_version_id": "qv-q-1790786637398-v1",
+      "option_key": "A",
+      "option_text": "CFO decreases"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v1-B",
+      "question_version_id": "qv-q-1790786637398-v1",
+      "option_key": "B",
+      "option_text": "CFO increases"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v1-C",
+      "question_version_id": "qv-q-1790786637398-v1",
+      "option_key": "C",
+      "option_text": "CFO is unchanged"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v2-A",
+      "question_version_id": "qv-q-1790786637398-v2",
+      "option_key": "A",
+      "option_text": "CFO declines significantly"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v2-B",
+      "question_version_id": "qv-q-1790786637398-v2",
+      "option_key": "B",
+      "option_text": "CFO increases due to financing reclassification"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v2-C",
+      "question_version_id": "qv-q-1790786637398-v2",
+      "option_key": "C",
+      "option_text": "CFO stays constant"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v3-A",
+      "question_version_id": "qv-q-1790786637398-v3",
+      "option_key": "A",
+      "option_text": "Option A v3"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v3-B",
+      "question_version_id": "qv-q-1790786637398-v3",
+      "option_key": "B",
+      "option_text": "Option B v3"
+    },
+    {
+      "id": "opt-qv-q-1790786637398-v3-C",
+      "question_version_id": "qv-q-1790786637398-v3",
+      "option_key": "C",
+      "option_text": "Option C v3"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v1-A",
+      "question_version_id": "qv-q-1790787422917-v1",
+      "option_key": "A",
+      "option_text": "CFO decreases"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v1-B",
+      "question_version_id": "qv-q-1790787422917-v1",
+      "option_key": "B",
+      "option_text": "CFO increases"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v1-C",
+      "question_version_id": "qv-q-1790787422917-v1",
+      "option_key": "C",
+      "option_text": "CFO is unchanged"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v2-A",
+      "question_version_id": "qv-q-1790787422917-v2",
+      "option_key": "A",
+      "option_text": "CFO declines significantly"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v2-B",
+      "question_version_id": "qv-q-1790787422917-v2",
+      "option_key": "B",
+      "option_text": "CFO increases due to financing reclassification"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v2-C",
+      "question_version_id": "qv-q-1790787422917-v2",
+      "option_key": "C",
+      "option_text": "CFO stays constant"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v3-A",
+      "question_version_id": "qv-q-1790787422917-v3",
+      "option_key": "A",
+      "option_text": "Option A v3"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v3-B",
+      "question_version_id": "qv-q-1790787422917-v3",
+      "option_key": "B",
+      "option_text": "Option B v3"
+    },
+    {
+      "id": "opt-qv-q-1790787422917-v3-C",
+      "question_version_id": "qv-q-1790787422917-v3",
+      "option_key": "C",
+      "option_text": "Option C v3"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v1-A",
+      "question_version_id": "qv-q-1790841021842-v1",
+      "option_key": "A",
+      "option_text": "CFO decreases"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v1-B",
+      "question_version_id": "qv-q-1790841021842-v1",
+      "option_key": "B",
+      "option_text": "CFO increases"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v1-C",
+      "question_version_id": "qv-q-1790841021842-v1",
+      "option_key": "C",
+      "option_text": "CFO is unchanged"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v2-A",
+      "question_version_id": "qv-q-1790841021842-v2",
+      "option_key": "A",
+      "option_text": "CFO declines significantly"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v2-B",
+      "question_version_id": "qv-q-1790841021842-v2",
+      "option_key": "B",
+      "option_text": "CFO increases due to financing reclassification"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v2-C",
+      "question_version_id": "qv-q-1790841021842-v2",
+      "option_key": "C",
+      "option_text": "CFO stays constant"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v3-A",
+      "question_version_id": "qv-q-1790841021842-v3",
+      "option_key": "A",
+      "option_text": "Option A v3"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v3-B",
+      "question_version_id": "qv-q-1790841021842-v3",
+      "option_key": "B",
+      "option_text": "Option B v3"
+    },
+    {
+      "id": "opt-qv-q-1790841021842-v3-C",
+      "question_version_id": "qv-q-1790841021842-v3",
+      "option_key": "C",
+      "option_text": "Option C v3"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v1-A",
+      "question_version_id": "qv-q-1790841030390-v1",
+      "option_key": "A",
+      "option_text": "CFO decreases"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v1-B",
+      "question_version_id": "qv-q-1790841030390-v1",
+      "option_key": "B",
+      "option_text": "CFO increases"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v1-C",
+      "question_version_id": "qv-q-1790841030390-v1",
+      "option_key": "C",
+      "option_text": "CFO is unchanged"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v2-A",
+      "question_version_id": "qv-q-1790841030390-v2",
+      "option_key": "A",
+      "option_text": "CFO declines significantly"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v2-B",
+      "question_version_id": "qv-q-1790841030390-v2",
+      "option_key": "B",
+      "option_text": "CFO increases due to financing reclassification"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v2-C",
+      "question_version_id": "qv-q-1790841030390-v2",
+      "option_key": "C",
+      "option_text": "CFO stays constant"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v3-A",
+      "question_version_id": "qv-q-1790841030390-v3",
+      "option_key": "A",
+      "option_text": "Option A v3"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v3-B",
+      "question_version_id": "qv-q-1790841030390-v3",
+      "option_key": "B",
+      "option_text": "Option B v3"
+    },
+    {
+      "id": "opt-qv-q-1790841030390-v3-C",
+      "question_version_id": "qv-q-1790841030390-v3",
+      "option_key": "C",
+      "option_text": "Option C v3"
+    }
+  ],
+  "question_tags": [],
+  "mock_exams": [
+    {
+      "id": "cfa-mock-1790786504287",
+      "title": "TEST-Mock-02 (Using Q001 v2)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": false,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:41:44.287Z",
+      "updated_at": "2026-09-30T16:41:44.287Z"
+    },
+    {
+      "id": "cfa-mock-1790786504281",
+      "title": "TEST-Mock-01 (Using Q001 v1)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": true,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:41:44.281Z",
+      "updated_at": "2026-09-30T16:41:44.283Z"
+    },
+    {
+      "id": "cfa-mock-1790786220944",
+      "title": "TEST-Mock-02 (Using Q001 v2)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": false,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:37:00.944Z",
+      "updated_at": "2026-09-30T16:37:00.944Z"
+    },
+    {
+      "id": "cfa-mock-1790786220938",
+      "title": "TEST-Mock-01 (Using Q001 v1)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": true,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:37:00.938Z",
+      "updated_at": "2026-09-30T16:37:00.939Z"
+    },
+    {
+      "id": "cfa-mock-2026-am",
+      "title": "CFA® Level I - Mock Exam AM Session (Standard)",
+      "subtitle": "Đề thi thử toàn diện 10 Topic chuẩn cấu trúc CFA Institute 2026",
+      "scope": "Toàn diện 10 Topic CFA Level I",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 135,
+      "total_questions": 5,
+      "passing_score_mps": 70,
+      "is_published": true,
+      "is_recommended": true,
+      "priority_label": "Khuyên dùng",
+      "is_nationwide": false,
+      "created_by": "usr-content-01",
+      "created_at": "2026-09-30T16:36:27.007Z",
+      "updated_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "cfa-mock-1790786637401",
+      "title": "TEST-Mock-01 (Using Q001 v1)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": true,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:43:57.401Z",
+      "updated_at": "2026-09-30T16:43:57.403Z"
+    },
+    {
+      "id": "cfa-mock-1790786637406",
+      "title": "TEST-Mock-02 (Using Q001 v2)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": false,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:43:57.406Z",
+      "updated_at": "2026-09-30T16:43:57.406Z"
+    },
+    {
+      "id": "cfa-mock-1790787422920",
+      "title": "TEST-Mock-01 (Using Q001 v1)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": true,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:57:02.920Z",
+      "updated_at": "2026-09-30T16:57:02.922Z"
+    },
+    {
+      "id": "cfa-mock-1790787422968",
+      "title": "TEST-Mock-02 (Using Q001 v2)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": false,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-09-30T16:57:02.968Z",
+      "updated_at": "2026-09-30T16:57:02.968Z"
+    },
+    {
+      "id": "cfa-mock-1790841021845",
+      "title": "TEST-Mock-01 (Using Q001 v1)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": true,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:21.845Z",
+      "updated_at": "2026-10-01T07:50:21.848Z"
+    },
+    {
+      "id": "cfa-mock-1790841021855",
+      "title": "TEST-Mock-02 (Using Q001 v2)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": false,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:21.855Z",
+      "updated_at": "2026-10-01T07:50:21.855Z"
+    },
+    {
+      "id": "cfa-mock-1790841030393",
+      "title": "TEST-Mock-01 (Using Q001 v1)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": true,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:30.393Z",
+      "updated_at": "2026-10-01T07:50:30.395Z"
+    },
+    {
+      "id": "cfa-mock-1790841030399",
+      "title": "TEST-Mock-02 (Using Q001 v2)",
+      "scope": "CFA Level I Mock Exam",
+      "level": "Level I",
+      "format_year": "2026",
+      "difficulty": "Standard CFA",
+      "duration_minutes": 60,
+      "total_questions": 1,
+      "passing_score_mps": 70,
+      "is_published": false,
+      "is_recommended": false,
+      "is_nationwide": false,
+      "created_by": "usr-admin-01",
+      "created_at": "2026-10-01T07:50:30.399Z",
+      "updated_at": "2026-10-01T07:50:30.399Z"
+    }
+  ],
+  "mock_exam_questions": [
+    {
+      "id": "meq-1",
+      "mock_exam_id": "cfa-mock-2026-am",
+      "question_version_id": "qv-seed-1-v1",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "meq-2",
+      "mock_exam_id": "cfa-mock-2026-am",
+      "question_version_id": "qv-seed-2-v1",
+      "question_order": 2,
+      "points": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "meq-3",
+      "mock_exam_id": "cfa-mock-2026-am",
+      "question_version_id": "qv-seed-3-v1",
+      "question_order": 3,
+      "points": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "meq-4",
+      "mock_exam_id": "cfa-mock-2026-am",
+      "question_version_id": "qv-seed-4-v1",
+      "question_order": 4,
+      "points": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "meq-5",
+      "mock_exam_id": "cfa-mock-2026-am",
+      "question_version_id": "qv-seed-5-v1",
+      "question_order": 5,
+      "points": 1,
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790786220938-1",
+      "mock_exam_id": "cfa-mock-1790786220938",
+      "question_version_id": "qv-q-1790786220936-v1",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:37:00.938Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790786220944-1",
+      "mock_exam_id": "cfa-mock-1790786220944",
+      "question_version_id": "qv-q-1790786220936-v2",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:37:00.944Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790786504281-1",
+      "mock_exam_id": "cfa-mock-1790786504281",
+      "question_version_id": "qv-q-1790786504279-v1",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:41:44.281Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790786504287-1",
+      "mock_exam_id": "cfa-mock-1790786504287",
+      "question_version_id": "qv-q-1790786504279-v2",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:41:44.287Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790786637401-1",
+      "mock_exam_id": "cfa-mock-1790786637401",
+      "question_version_id": "qv-q-1790786637398-v1",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:43:57.401Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790786637406-1",
+      "mock_exam_id": "cfa-mock-1790786637406",
+      "question_version_id": "qv-q-1790786637398-v2",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:43:57.406Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790787422920-1",
+      "mock_exam_id": "cfa-mock-1790787422920",
+      "question_version_id": "qv-q-1790787422917-v1",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:57:02.920Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790787422968-1",
+      "mock_exam_id": "cfa-mock-1790787422968",
+      "question_version_id": "qv-q-1790787422917-v2",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-09-30T16:57:02.968Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790841021845-1",
+      "mock_exam_id": "cfa-mock-1790841021845",
+      "question_version_id": "qv-q-1790841021842-v1",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-10-01T07:50:21.845Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790841021855-1",
+      "mock_exam_id": "cfa-mock-1790841021855",
+      "question_version_id": "qv-q-1790841021842-v2",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-10-01T07:50:21.855Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790841030393-1",
+      "mock_exam_id": "cfa-mock-1790841030393",
+      "question_version_id": "qv-q-1790841030390-v1",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-10-01T07:50:30.393Z"
+    },
+    {
+      "id": "meq-cfa-mock-1790841030399-1",
+      "mock_exam_id": "cfa-mock-1790841030399",
+      "question_version_id": "qv-q-1790841030390-v2",
+      "question_order": 1,
+      "points": 1,
+      "created_at": "2026-10-01T07:50:30.399Z"
+    }
+  ],
+  "exam_attempts": [
+    {
+      "id": "att-student-mock-01",
+      "user_id": "usr-student-01",
+      "mock_exam_id": "cfa-mock-2026-am",
+      "status": "completed",
+      "current_question_index": 4,
+      "remaining_seconds": 3200,
+      "total_duration_seconds": 8100,
+      "time_spent_seconds": 4900,
+      "is_paused": false,
+      "font_size_preference": "normal",
+      "score_percentage": 60,
+      "passed_mps": false,
+      "correct_count": 3,
+      "incorrect_count": 2,
+      "unanswered_count": 0,
+      "percentile_rank": 64.5,
+      "started_at": "2026-09-29T16:36:27.025Z",
+      "last_heartbeat_at": "2026-09-29T16:36:27.025Z",
+      "completed_at": "2026-09-29T17:58:07.025Z"
+    },
+    {
+      "id": "att-1790786220945-7w51",
+      "user_id": "usr-student-01",
+      "mock_exam_id": "cfa-mock-1790786220938",
+      "status": "completed",
+      "current_question_index": 0,
+      "remaining_seconds": 3000,
+      "total_duration_seconds": 3600,
+      "time_spent_seconds": 600,
+      "is_paused": false,
+      "font_size_preference": "normal",
+      "started_at": "2026-09-30T16:37:00.945Z",
+      "last_heartbeat_at": "2026-09-30T16:37:00.956Z",
+      "score_percentage": 100,
+      "passed_mps": true,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "unanswered_count": 0,
+      "percentile_rank": 98,
+      "completed_at": "2026-09-30T16:37:00.958Z"
+    },
+    {
+      "id": "att-1790786504288-sqdn",
+      "user_id": "usr-student-01",
+      "mock_exam_id": "cfa-mock-1790786504281",
+      "status": "completed",
+      "current_question_index": 0,
+      "remaining_seconds": 3000,
+      "total_duration_seconds": 3600,
+      "time_spent_seconds": 600,
+      "is_paused": false,
+      "font_size_preference": "normal",
+      "started_at": "2026-09-30T16:41:44.288Z",
+      "last_heartbeat_at": "2026-09-30T16:41:44.290Z",
+      "score_percentage": 100,
+      "passed_mps": true,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "unanswered_count": 0,
+      "percentile_rank": 98,
+      "completed_at": "2026-09-30T16:41:44.292Z"
+    },
+    {
+      "id": "att-1790786637408-2p3k",
+      "user_id": "usr-student-01",
+      "mock_exam_id": "cfa-mock-1790786637401",
+      "status": "completed",
+      "current_question_index": 0,
+      "remaining_seconds": 3000,
+      "total_duration_seconds": 3600,
+      "time_spent_seconds": 600,
+      "is_paused": false,
+      "font_size_preference": "normal",
+      "started_at": "2026-09-30T16:43:57.408Z",
+      "last_heartbeat_at": "2026-09-30T16:43:57.410Z",
+      "score_percentage": 100,
+      "passed_mps": true,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "unanswered_count": 0,
+      "percentile_rank": 98,
+      "completed_at": "2026-09-30T16:43:57.413Z"
+    },
+    {
+      "id": "att-1790787422970-ed1r",
+      "user_id": "usr-student-01",
+      "mock_exam_id": "cfa-mock-1790787422920",
+      "status": "completed",
+      "current_question_index": 0,
+      "remaining_seconds": 3000,
+      "total_duration_seconds": 3600,
+      "time_spent_seconds": 600,
+      "is_paused": false,
+      "font_size_preference": "normal",
+      "started_at": "2026-09-30T16:57:02.970Z",
+      "last_heartbeat_at": "2026-09-30T16:57:02.983Z",
+      "score_percentage": 100,
+      "passed_mps": true,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "unanswered_count": 0,
+      "percentile_rank": 98,
+      "completed_at": "2026-09-30T16:57:02.987Z"
+    },
+    {
+      "id": "att-1790841021857-lp4k",
+      "user_id": "usr-student-01",
+      "mock_exam_id": "cfa-mock-1790841021845",
+      "status": "completed",
+      "current_question_index": 0,
+      "remaining_seconds": 3000,
+      "total_duration_seconds": 3600,
+      "time_spent_seconds": 600,
+      "is_paused": false,
+      "font_size_preference": "normal",
+      "started_at": "2026-10-01T07:50:21.857Z",
+      "last_heartbeat_at": "2026-10-01T07:50:21.872Z",
+      "score_percentage": 100,
+      "passed_mps": true,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "unanswered_count": 0,
+      "percentile_rank": 98,
+      "completed_at": "2026-10-01T07:50:21.876Z"
+    },
+    {
+      "id": "att-1790841030401-6qeb",
+      "user_id": "usr-student-01",
+      "mock_exam_id": "cfa-mock-1790841030393",
+      "status": "completed",
+      "current_question_index": 0,
+      "remaining_seconds": 3000,
+      "total_duration_seconds": 3600,
+      "time_spent_seconds": 600,
+      "is_paused": false,
+      "font_size_preference": "normal",
+      "started_at": "2026-10-01T07:50:30.401Z",
+      "last_heartbeat_at": "2026-10-01T07:50:30.412Z",
+      "score_percentage": 100,
+      "passed_mps": true,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "unanswered_count": 0,
+      "percentile_rank": 98,
+      "completed_at": "2026-10-01T07:50:30.419Z"
+    }
+  ],
+  "exam_answers": [
+    {
+      "id": "ans-1",
+      "attempt_id": "att-student-mock-01",
+      "question_version_id": "qv-seed-1-v1",
+      "question_order": 1,
+      "selected_option": "A",
+      "is_correct": false,
+      "is_flagged": false,
+      "time_spent_seconds": 90
+    },
+    {
+      "id": "ans-2",
+      "attempt_id": "att-student-mock-01",
+      "question_version_id": "qv-seed-2-v1",
+      "question_order": 2,
+      "selected_option": "A",
+      "is_correct": true,
+      "is_flagged": false,
+      "time_spent_seconds": 110
+    },
+    {
+      "id": "ans-3",
+      "attempt_id": "att-student-mock-01",
+      "question_version_id": "qv-seed-3-v1",
+      "question_order": 3,
+      "selected_option": "B",
+      "is_correct": true,
+      "is_flagged": true,
+      "time_spent_seconds": 85
+    },
+    {
+      "id": "ans-4",
+      "attempt_id": "att-student-mock-01",
+      "question_version_id": "qv-seed-4-v1",
+      "question_order": 4,
+      "selected_option": "B",
+      "is_correct": true,
+      "is_flagged": false,
+      "time_spent_seconds": 45
+    },
+    {
+      "id": "ans-5",
+      "attempt_id": "att-student-mock-01",
+      "question_version_id": "qv-seed-5-v1",
+      "question_order": 5,
+      "selected_option": "A",
+      "is_correct": false,
+      "is_flagged": false,
+      "time_spent_seconds": 70
+    },
+    {
+      "id": "ans-att-1790786220945-7w51-1",
+      "attempt_id": "att-1790786220945-7w51",
+      "question_version_id": "qv-q-1790786220936-v1",
+      "question_order": 1,
+      "is_flagged": false,
+      "time_spent_seconds": 0,
+      "selected_option": "B",
+      "answered_at": "2026-09-30T16:37:00.956Z",
+      "is_correct": true
+    },
+    {
+      "id": "ans-att-1790786504288-sqdn-1",
+      "attempt_id": "att-1790786504288-sqdn",
+      "question_version_id": "qv-q-1790786504279-v1",
+      "question_order": 1,
+      "is_flagged": false,
+      "time_spent_seconds": 0,
+      "selected_option": "B",
+      "answered_at": "2026-09-30T16:41:44.290Z",
+      "is_correct": true
+    },
+    {
+      "id": "ans-att-1790786637408-2p3k-1",
+      "attempt_id": "att-1790786637408-2p3k",
+      "question_version_id": "qv-q-1790786637398-v1",
+      "question_order": 1,
+      "is_flagged": false,
+      "time_spent_seconds": 0,
+      "selected_option": "B",
+      "answered_at": "2026-09-30T16:43:57.410Z",
+      "is_correct": true
+    },
+    {
+      "id": "ans-att-1790787422970-ed1r-1",
+      "attempt_id": "att-1790787422970-ed1r",
+      "question_version_id": "qv-q-1790787422917-v1",
+      "question_order": 1,
+      "is_flagged": false,
+      "time_spent_seconds": 0,
+      "selected_option": "B",
+      "answered_at": "2026-09-30T16:57:02.983Z",
+      "is_correct": true
+    },
+    {
+      "id": "ans-att-1790841021857-lp4k-1",
+      "attempt_id": "att-1790841021857-lp4k",
+      "question_version_id": "qv-q-1790841021842-v1",
+      "question_order": 1,
+      "is_flagged": false,
+      "time_spent_seconds": 0,
+      "selected_option": "B",
+      "answered_at": "2026-10-01T07:50:21.872Z",
+      "is_correct": true
+    },
+    {
+      "id": "ans-att-1790841030401-6qeb-1",
+      "attempt_id": "att-1790841030401-6qeb",
+      "question_version_id": "qv-q-1790841030390-v1",
+      "question_order": 1,
+      "is_flagged": false,
+      "time_spent_seconds": 0,
+      "selected_option": "B",
+      "answered_at": "2026-10-01T07:50:30.412Z",
+      "is_correct": true
+    }
+  ],
+  "exam_results": [
+    {
+      "attempt_id": "att-student-mock-01",
+      "total_questions": 5,
+      "score_percentage": 60,
+      "mps_percentage": 70,
+      "passed_mps": false,
+      "confidence_band_min": 55.5,
+      "confidence_band_max": 64.5,
+      "percentile_rank": 64.5,
+      "avg_seconds_per_question": 80,
+      "mentor_note": "Bạn đạt 60.0% trong bài thi thử gần nhất. Cần chú trọng cải thiện chuyên sâu mảng FRA (Leases & ROU Asset) và Equity Valuation để vượt ngưỡng MPS 70%.",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "attempt_id": "att-1790786220945-7w51",
+      "total_questions": 1,
+      "score_percentage": 100,
+      "mps_percentage": 70,
+      "passed_mps": true,
+      "confidence_band_min": 95.5,
+      "confidence_band_max": 100,
+      "percentile_rank": 98,
+      "avg_seconds_per_question": 600,
+      "mentor_note": "Kết quả vượt ngưỡng chuẩn MPS CFA Institute. Tiếp tục duy trì phong độ và rà soát các câu hỏi nâng cao.",
+      "created_at": "2026-09-30T16:37:00.958Z"
+    },
+    {
+      "attempt_id": "att-1790786504288-sqdn",
+      "total_questions": 1,
+      "score_percentage": 100,
+      "mps_percentage": 70,
+      "passed_mps": true,
+      "confidence_band_min": 95.5,
+      "confidence_band_max": 100,
+      "percentile_rank": 98,
+      "avg_seconds_per_question": 600,
+      "mentor_note": "Kết quả vượt ngưỡng chuẩn MPS CFA Institute. Tiếp tục duy trì phong độ và rà soát các câu hỏi nâng cao.",
+      "created_at": "2026-09-30T16:41:44.292Z"
+    },
+    {
+      "attempt_id": "att-1790786637408-2p3k",
+      "total_questions": 1,
+      "score_percentage": 100,
+      "mps_percentage": 70,
+      "passed_mps": true,
+      "confidence_band_min": 95.5,
+      "confidence_band_max": 100,
+      "percentile_rank": 98,
+      "avg_seconds_per_question": 600,
+      "mentor_note": "Kết quả vượt ngưỡng chuẩn MPS CFA Institute. Tiếp tục duy trì phong độ và rà soát các câu hỏi nâng cao.",
+      "created_at": "2026-09-30T16:43:57.413Z"
+    },
+    {
+      "attempt_id": "att-1790787422970-ed1r",
+      "total_questions": 1,
+      "score_percentage": 100,
+      "mps_percentage": 70,
+      "passed_mps": true,
+      "confidence_band_min": 95.5,
+      "confidence_band_max": 100,
+      "percentile_rank": 98,
+      "avg_seconds_per_question": 600,
+      "mentor_note": "Kết quả vượt ngưỡng chuẩn MPS CFA Institute. Tiếp tục duy trì phong độ và rà soát các câu hỏi nâng cao.",
+      "created_at": "2026-09-30T16:57:02.987Z"
+    },
+    {
+      "attempt_id": "att-1790841021857-lp4k",
+      "total_questions": 1,
+      "score_percentage": 100,
+      "mps_percentage": 70,
+      "passed_mps": true,
+      "confidence_band_min": 95.5,
+      "confidence_band_max": 100,
+      "percentile_rank": 98,
+      "avg_seconds_per_question": 600,
+      "mentor_note": "Kết quả vượt ngưỡng chuẩn MPS CFA Institute. Tiếp tục duy trì phong độ và rà soát các câu hỏi nâng cao.",
+      "created_at": "2026-10-01T07:50:21.876Z"
+    },
+    {
+      "attempt_id": "att-1790841030401-6qeb",
+      "total_questions": 1,
+      "score_percentage": 100,
+      "mps_percentage": 70,
+      "passed_mps": true,
+      "confidence_band_min": 95.5,
+      "confidence_band_max": 100,
+      "percentile_rank": 98,
+      "avg_seconds_per_question": 600,
+      "mentor_note": "Kết quả vượt ngưỡng chuẩn MPS CFA Institute. Tiếp tục duy trì phong độ và rà soát các câu hỏi nâng cao.",
+      "created_at": "2026-10-01T07:50:30.419Z"
+    }
+  ],
+  "topic_performance": [
+    {
+      "id": "tp-1",
+      "attempt_id": "att-student-mock-01",
+      "topic_id": "fra",
+      "total_questions": 2,
+      "correct_count": 1,
+      "percentage": 50,
+      "target_mps": 70,
+      "performance_status": "Cần cải thiện",
+      "status_badge": "Cần cải thiện (50%)",
+      "action_recommendation": "Học lại bài giảng: Leases & Long-Term Liabilities (Lesson 03)",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "tp-2",
+      "attempt_id": "att-student-mock-01",
+      "topic_id": "fixed-income",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Duy trì luyện tập nâng cao các câu hỏi Convexity đa biến.",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "tp-3",
+      "attempt_id": "att-student-mock-01",
+      "topic_id": "ethics",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Nắm vững các tình huống thực tế áp dụng Standard I-VII.",
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "tp-att-1790786220945-7w51-fra",
+      "attempt_id": "att-1790786220945-7w51",
+      "topic_id": "fra",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Kiến thức vững chắc. Tối ưu thời gian làm bài.",
+      "created_at": "2026-09-30T16:37:00.958Z"
+    },
+    {
+      "id": "tp-att-1790786504288-sqdn-fra",
+      "attempt_id": "att-1790786504288-sqdn",
+      "topic_id": "fra",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Kiến thức vững chắc. Tối ưu thời gian làm bài.",
+      "created_at": "2026-09-30T16:41:44.292Z"
+    },
+    {
+      "id": "tp-att-1790786637408-2p3k-fra",
+      "attempt_id": "att-1790786637408-2p3k",
+      "topic_id": "fra",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Kiến thức vững chắc. Tối ưu thời gian làm bài.",
+      "created_at": "2026-09-30T16:43:57.413Z"
+    },
+    {
+      "id": "tp-att-1790787422970-ed1r-fra",
+      "attempt_id": "att-1790787422970-ed1r",
+      "topic_id": "fra",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Kiến thức vững chắc. Tối ưu thời gian làm bài.",
+      "created_at": "2026-09-30T16:57:02.987Z"
+    },
+    {
+      "id": "tp-att-1790841021857-lp4k-fra",
+      "attempt_id": "att-1790841021857-lp4k",
+      "topic_id": "fra",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Kiến thức vững chắc. Tối ưu thời gian làm bài.",
+      "created_at": "2026-10-01T07:50:21.876Z"
+    },
+    {
+      "id": "tp-att-1790841030401-6qeb-fra",
+      "attempt_id": "att-1790841030401-6qeb",
+      "topic_id": "fra",
+      "total_questions": 1,
+      "correct_count": 1,
+      "percentage": 100,
+      "target_mps": 70,
+      "performance_status": "Vượt trội",
+      "status_badge": "Vượt trội (100%)",
+      "action_recommendation": "Kiến thức vững chắc. Tối ưu thời gian làm bài.",
+      "created_at": "2026-10-01T07:50:30.419Z"
+    }
+  ],
+  "video_progress": [
+    {
+      "id": "vp-student-fra-03",
+      "user_id": "usr-student-01",
+      "video_id": "vid-fra-03",
+      "last_playback_seconds": 1475,
+      "max_watched_seconds": 1520,
+      "watched_percentage": 51.5,
+      "is_completed": false,
+      "last_heartbeat_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "vp-1790786220961-0rs8",
+      "user_id": "usr-student-01",
+      "video_id": "vid-fra-01",
+      "last_playback_seconds": 2120,
+      "max_watched_seconds": 2120,
+      "watched_percentage": 88.3,
+      "is_completed": true,
+      "completed_at": "2026-09-30T16:37:00.961Z",
+      "last_heartbeat_at": "2026-10-01T07:50:30.424Z"
+    }
+  ],
+  "lesson_progress": [
+    {
+      "id": "lp-1790786220961-zeix",
+      "user_id": "usr-student-01",
+      "lesson_id": "les-fra-01",
+      "course_id": "cfa-l1-fra",
+      "status": "completed",
+      "practice_questions_answered": 0,
+      "practice_questions_correct": 0,
+      "completed_at": "2026-09-30T16:37:00.961Z",
+      "updated_at": "2026-10-01T07:50:30.424Z"
+    }
+  ],
+  "course_progress": [
+    {
+      "id": "cp-1790786220962-a380",
+      "user_id": "usr-student-01",
+      "course_id": "cfa-l1-fra",
+      "total_lessons": 3,
+      "completed_lessons": 1,
+      "progress_percentage": 33,
+      "is_completed": false,
+      "updated_at": "2026-10-01T07:50:30.426Z"
+    }
+  ],
+  "student_notes": [],
+  "bookmarks": [],
+  "notifications": [
+    {
+      "id": "notif-1790787422996-gcc",
+      "user_id": "usr-std-muoclez7-51hw",
+      "title": "Chào mừng bạn đến với FES Academy LMS",
+      "message": "Hồ sơ học viên CFA Level I của bạn đã được thiết lập thành công. Hãy bắt đầu lộ trình học ngay hôm nay!",
+      "type": "general",
+      "link_url": "/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-30T16:57:02.995Z"
+    },
+    {
+      "id": "notif-1790841021885-5y4",
+      "user_id": "usr-std-mup8i858-4qzz",
+      "title": "Chào mừng bạn đến với FES Academy LMS",
+      "message": "Hồ sơ học viên CFA Level I của bạn đã được thiết lập thành công. Hãy bắt đầu lộ trình học ngay hôm nay!",
+      "type": "general",
+      "link_url": "/dashboard",
+      "is_read": false,
+      "created_at": "2026-10-01T07:50:21.884Z"
+    },
+    {
+      "id": "notif-1790841030430-dza",
+      "user_id": "usr-std-mup8ieqk-5x2n",
+      "title": "Chào mừng bạn đến với FES Academy LMS",
+      "message": "Hồ sơ học viên CFA Level I của bạn đã được thiết lập thành công. Hãy bắt đầu lộ trình học ngay hôm nay!",
+      "type": "general",
+      "link_url": "/dashboard",
+      "is_read": false,
+      "created_at": "2026-10-01T07:50:30.428Z"
+    },
+    {
+      "id": "notif-1790842005297-23k",
+      "user_id": "usr-std-mup93ay8-0zo1",
+      "title": "Chào mừng bạn đến với FES Academy LMS",
+      "message": "Hồ sơ học viên CFA Level I của bạn đã được thiết lập thành công. Hãy bắt đầu lộ trình học ngay hôm nay!",
+      "type": "general",
+      "link_url": "/dashboard",
+      "is_read": false,
+      "created_at": "2026-10-01T08:06:45.296Z"
+    },
+    {
+      "id": "notif-1790842170149-3m0",
+      "user_id": "usr-std-mup96u5f-e4e5",
+      "title": "Chào mừng bạn đến với FES Academy LMS",
+      "message": "Hồ sơ học viên CFA Level I của bạn đã được thiết lập thành công. Hãy bắt đầu lộ trình học ngay hôm nay!",
+      "type": "general",
+      "link_url": "/dashboard",
+      "is_read": false,
+      "created_at": "2026-10-01T08:09:30.147Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "aud-seed-1",
+      "actor_id": "usr-admin-01",
+      "actor_name": "FES System Admin",
+      "action": "SYSTEM_BOOTSTRAP",
+      "entity_type": "system",
+      "entity_id": "0",
+      "new_values": {
+        "message": "Database initialized with 10 CFA Topics and core Question Bank."
+      },
+      "created_at": "2026-09-30T16:36:27.007Z"
+    },
+    {
+      "id": "aud-1790786187029-fh1h0",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_CREATED",
+      "entity_type": "questions",
+      "entity_id": "q-1790786187029",
+      "new_values": {
+        "code": "TEST-Q001-1790786187028",
+        "version": 1
+      },
+      "created_at": "2026-09-30T16:36:27.029Z"
+    },
+    {
+      "id": "aud-1790786220937-j2lmo",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_CREATED",
+      "entity_type": "questions",
+      "entity_id": "q-1790786220936",
+      "new_values": {
+        "code": "TEST-Q001-1790786220936",
+        "version": 1
+      },
+      "created_at": "2026-09-30T16:37:00.937Z"
+    },
+    {
+      "id": "aud-1790786220939-q49r5",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786220938",
+      "new_values": {
+        "title": "TEST-Mock-01 (Using Q001 v1)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:37:00.939Z"
+    },
+    {
+      "id": "aud-1790786220940-4289r",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_PUBLISHED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786220938",
+      "new_values": {
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:37:00.940Z"
+    },
+    {
+      "id": "aud-1790786220943-0a9xc",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790786220936-v2",
+      "new_values": {
+        "version_number": 2,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:37:00.943Z"
+    },
+    {
+      "id": "aud-1790786220944-tnvri",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786220944",
+      "new_values": {
+        "title": "TEST-Mock-02 (Using Q001 v2)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:37:00.944Z"
+    },
+    {
+      "id": "aud-1790786220959-b2yjh",
+      "actor_id": "usr-student-01",
+      "action": "EXAM_SUBMITTED",
+      "entity_type": "exam_attempts",
+      "entity_id": "att-1790786220945-7w51",
+      "new_values": {
+        "score": 100,
+        "passed": true
+      },
+      "created_at": "2026-09-30T16:37:00.959Z"
+    },
+    {
+      "id": "aud-1790786220960-07n0n",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790786220936-v3",
+      "new_values": {
+        "version_number": 3,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:37:00.960Z"
+    },
+    {
+      "id": "aud-1790786504280-kvfan",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_CREATED",
+      "entity_type": "questions",
+      "entity_id": "q-1790786504279",
+      "new_values": {
+        "code": "TEST-Q001-1790786504278",
+        "version": 1
+      },
+      "created_at": "2026-09-30T16:41:44.280Z"
+    },
+    {
+      "id": "aud-1790786504282-eqgrp",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786504281",
+      "new_values": {
+        "title": "TEST-Mock-01 (Using Q001 v1)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:41:44.282Z"
+    },
+    {
+      "id": "aud-1790786504284-7t8sn",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_PUBLISHED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786504281",
+      "new_values": {
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:41:44.285Z"
+    },
+    {
+      "id": "aud-1790786504286-r2s1z",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790786504279-v2",
+      "new_values": {
+        "version_number": 2,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:41:44.286Z"
+    },
+    {
+      "id": "aud-1790786504287-w4nlx",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786504287",
+      "new_values": {
+        "title": "TEST-Mock-02 (Using Q001 v2)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:41:44.287Z"
+    },
+    {
+      "id": "aud-1790786504292-fo5ui",
+      "actor_id": "usr-student-01",
+      "action": "EXAM_SUBMITTED",
+      "entity_type": "exam_attempts",
+      "entity_id": "att-1790786504288-sqdn",
+      "new_values": {
+        "score": 100,
+        "passed": true
+      },
+      "created_at": "2026-09-30T16:41:44.292Z"
+    },
+    {
+      "id": "aud-1790786504294-n5r34",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790786504279-v3",
+      "new_values": {
+        "version_number": 3,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:41:44.294Z"
+    },
+    {
+      "id": "aud-1790786637399-4gqjs",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_CREATED",
+      "entity_type": "questions",
+      "entity_id": "q-1790786637398",
+      "new_values": {
+        "code": "TEST-Q001-1790786637398",
+        "version": 1
+      },
+      "created_at": "2026-09-30T16:43:57.399Z"
+    },
+    {
+      "id": "aud-1790786637402-79ixh",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786637401",
+      "new_values": {
+        "title": "TEST-Mock-01 (Using Q001 v1)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:43:57.402Z"
+    },
+    {
+      "id": "aud-1790786637404-530tx",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_PUBLISHED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786637401",
+      "new_values": {
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:43:57.404Z"
+    },
+    {
+      "id": "aud-1790786637405-ua9yf",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790786637398-v2",
+      "new_values": {
+        "version_number": 2,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:43:57.405Z"
+    },
+    {
+      "id": "aud-1790786637407-876lm",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790786637406",
+      "new_values": {
+        "title": "TEST-Mock-02 (Using Q001 v2)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:43:57.407Z"
+    },
+    {
+      "id": "aud-1790786637413-45e50",
+      "actor_id": "usr-student-01",
+      "action": "EXAM_SUBMITTED",
+      "entity_type": "exam_attempts",
+      "entity_id": "att-1790786637408-2p3k",
+      "new_values": {
+        "score": 100,
+        "passed": true
+      },
+      "created_at": "2026-09-30T16:43:57.413Z"
+    },
+    {
+      "id": "aud-1790786637415-qamxo",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790786637398-v3",
+      "new_values": {
+        "version_number": 3,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:43:57.415Z"
+    },
+    {
+      "id": "aud-1790787422918-puis7",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_CREATED",
+      "entity_type": "questions",
+      "entity_id": "q-1790787422917",
+      "new_values": {
+        "code": "TEST-Q001-1790787422916",
+        "version": 1
+      },
+      "created_at": "2026-09-30T16:57:02.918Z"
+    },
+    {
+      "id": "aud-1790787422921-89wkm",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790787422920",
+      "new_values": {
+        "title": "TEST-Mock-01 (Using Q001 v1)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:57:02.921Z"
+    },
+    {
+      "id": "aud-1790787422924-61dsa",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_PUBLISHED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790787422920",
+      "new_values": {
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:57:02.924Z"
+    },
+    {
+      "id": "aud-1790787422927-a2tk0",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790787422917-v2",
+      "new_values": {
+        "version_number": 2,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:57:02.927Z"
+    },
+    {
+      "id": "aud-1790787422969-vid91",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790787422968",
+      "new_values": {
+        "title": "TEST-Mock-02 (Using Q001 v2)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-09-30T16:57:02.969Z"
+    },
+    {
+      "id": "aud-1790787422987-2im6r",
+      "actor_id": "usr-student-01",
+      "action": "EXAM_SUBMITTED",
+      "entity_type": "exam_attempts",
+      "entity_id": "att-1790787422970-ed1r",
+      "new_values": {
+        "score": 100,
+        "passed": true
+      },
+      "created_at": "2026-09-30T16:57:02.987Z"
+    },
+    {
+      "id": "aud-1790787422989-a82a2",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790787422917-v3",
+      "new_values": {
+        "version_number": 3,
+        "is_published": true
+      },
+      "created_at": "2026-09-30T16:57:02.989Z"
+    },
+    {
+      "id": "aud-1790787422996-h0ymf",
+      "action": "STUDENT_CREATED",
+      "entity_type": "USER",
+      "entity_id": "usr-std-muoclez7-51hw",
+      "new_values": {
+        "email": "test.student.1790787422995@fesacademy.com.vn",
+        "fullName": "Trần Minh Quân",
+        "cfaLevel": "Level I",
+        "targetExamDate": "Nov 2026",
+        "isActive": true,
+        "authProvider": "firebase_auth_pending"
+      },
+      "created_at": "2026-09-30T16:57:02.996Z"
+    },
+    {
+      "id": "aud-1790841021843-kx7fo",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_CREATED",
+      "entity_type": "questions",
+      "entity_id": "q-1790841021842",
+      "new_values": {
+        "code": "TEST-Q001-1790841021841",
+        "version": 1
+      },
+      "created_at": "2026-10-01T07:50:21.843Z"
+    },
+    {
+      "id": "aud-1790841021846-i7wg0",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790841021845",
+      "new_values": {
+        "title": "TEST-Mock-01 (Using Q001 v1)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-10-01T07:50:21.846Z"
+    },
+    {
+      "id": "aud-1790841021849-79ohq",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_PUBLISHED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790841021845",
+      "new_values": {
+        "is_published": true
+      },
+      "created_at": "2026-10-01T07:50:21.849Z"
+    },
+    {
+      "id": "aud-1790841021854-czxjr",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790841021842-v2",
+      "new_values": {
+        "version_number": 2,
+        "is_published": true
+      },
+      "created_at": "2026-10-01T07:50:21.854Z"
+    },
+    {
+      "id": "aud-1790841021856-f1brv",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790841021855",
+      "new_values": {
+        "title": "TEST-Mock-02 (Using Q001 v2)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-10-01T07:50:21.856Z"
+    },
+    {
+      "id": "aud-1790841021876-0stmq",
+      "actor_id": "usr-student-01",
+      "action": "EXAM_SUBMITTED",
+      "entity_type": "exam_attempts",
+      "entity_id": "att-1790841021857-lp4k",
+      "new_values": {
+        "score": 100,
+        "passed": true
+      },
+      "created_at": "2026-10-01T07:50:21.876Z"
+    },
+    {
+      "id": "aud-1790841021878-2ozj2",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790841021842-v3",
+      "new_values": {
+        "version_number": 3,
+        "is_published": true
+      },
+      "created_at": "2026-10-01T07:50:21.878Z"
+    },
+    {
+      "id": "aud-1790841021885-8hrms",
+      "action": "STUDENT_CREATED",
+      "entity_type": "USER",
+      "entity_id": "usr-std-mup8i858-4qzz",
+      "new_values": {
+        "email": "test.student.1790841021883@fesacademy.com.vn",
+        "fullName": "Trần Minh Quân",
+        "cfaLevel": "Level I",
+        "targetExamDate": "Nov 2026",
+        "isActive": true,
+        "authProvider": "firebase_auth_pending"
+      },
+      "created_at": "2026-10-01T07:50:21.885Z"
+    },
+    {
+      "id": "aud-1790841030392-jtp1y",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_CREATED",
+      "entity_type": "questions",
+      "entity_id": "q-1790841030390",
+      "new_values": {
+        "code": "TEST-Q001-1790841030390",
+        "version": 1
+      },
+      "created_at": "2026-10-01T07:50:30.392Z"
+    },
+    {
+      "id": "aud-1790841030394-si7fl",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790841030393",
+      "new_values": {
+        "title": "TEST-Mock-01 (Using Q001 v1)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-10-01T07:50:30.394Z"
+    },
+    {
+      "id": "aud-1790841030396-yjmy0",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_PUBLISHED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790841030393",
+      "new_values": {
+        "is_published": true
+      },
+      "created_at": "2026-10-01T07:50:30.396Z"
+    },
+    {
+      "id": "aud-1790841030398-to98h",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790841030390-v2",
+      "new_values": {
+        "version_number": 2,
+        "is_published": true
+      },
+      "created_at": "2026-10-01T07:50:30.398Z"
+    },
+    {
+      "id": "aud-1790841030400-vd9w3",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "MOCK_EXAM_CREATED",
+      "entity_type": "mock_exams",
+      "entity_id": "cfa-mock-1790841030399",
+      "new_values": {
+        "title": "TEST-Mock-02 (Using Q001 v2)",
+        "questionsCount": 1
+      },
+      "created_at": "2026-10-01T07:50:30.400Z"
+    },
+    {
+      "id": "aud-1790841030419-aglc7",
+      "actor_id": "usr-student-01",
+      "action": "EXAM_SUBMITTED",
+      "entity_type": "exam_attempts",
+      "entity_id": "att-1790841030401-6qeb",
+      "new_values": {
+        "score": 100,
+        "passed": true
+      },
+      "created_at": "2026-10-01T07:50:30.419Z"
+    },
+    {
+      "id": "aud-1790841030422-urg1c",
+      "actor_id": "usr-admin-01",
+      "actor_name": "admin@fes.edu.vn",
+      "action": "QUESTION_VERSION_CREATED",
+      "entity_type": "question_versions",
+      "entity_id": "qv-q-1790841030390-v3",
+      "new_values": {
+        "version_number": 3,
+        "is_published": true
+      },
+      "created_at": "2026-10-01T07:50:30.422Z"
+    },
+    {
+      "id": "aud-1790841030430-yvqsw",
+      "action": "STUDENT_CREATED",
+      "entity_type": "USER",
+      "entity_id": "usr-std-mup8ieqk-5x2n",
+      "new_values": {
+        "email": "test.student.1790841030428@fesacademy.com.vn",
+        "fullName": "Trần Minh Quân",
+        "cfaLevel": "Level I",
+        "targetExamDate": "Nov 2026",
+        "isActive": true,
+        "authProvider": "firebase_auth_pending"
+      },
+      "created_at": "2026-10-01T07:50:30.430Z"
+    },
+    {
+      "id": "aud-1790842005297-ze385",
+      "action": "STUDENT_CREATED",
+      "entity_type": "USER",
+      "entity_id": "usr-std-mup93ay8-0zo1",
+      "new_values": {
+        "email": "test14.verify.1790842005295@fesacademy.com.vn",
+        "fullName": "Trần Minh Quân Test14",
+        "cfaLevel": "Level I",
+        "targetExamDate": "Nov 2026",
+        "isActive": true,
+        "authProvider": "firebase_auth_pending"
+      },
+      "created_at": "2026-10-01T08:06:45.297Z"
+    },
+    {
+      "id": "aud-1790842005300-ew00l",
+      "action": "STUDENT_UPDATED",
+      "entity_type": "USER",
+      "entity_id": "usr-std-mup93ay8-0zo1",
+      "old_values": {
+        "fullName": "Trần Minh Quân Test14",
+        "phone": "+84912345678",
+        "cfaLevel": "Level I",
+        "targetExamDate": "Nov 2026",
+        "isActive": true
+      },
+      "new_values": {
+        "fullName": "Trần Minh Quân (Updated)",
+        "phoneNumber": "+84988776655",
+        "cfaLevel": "Level II",
+        "targetExamDate": "May 2027"
+      },
+      "created_at": "2026-10-01T08:06:45.300Z"
+    },
+    {
+      "id": "aud-1790842170149-q9t2v",
+      "action": "STUDENT_CREATED",
+      "entity_type": "USER",
+      "entity_id": "usr-std-mup96u5f-e4e5",
+      "new_values": {
+        "email": "test15.verify.1790842170147@fesacademy.com.vn",
+        "fullName": "Trần Minh Quân Test15",
+        "cfaLevel": "Level I",
+        "targetExamDate": "Nov 2026",
+        "isActive": true,
+        "authProvider": "firebase_auth_pending"
+      },
+      "created_at": "2026-10-01T08:09:30.149Z"
+    },
+    {
+      "id": "aud-1790842170151-p98hg",
+      "action": "STUDENT_DEACTIVATED",
+      "entity_type": "USER",
+      "entity_id": "usr-std-mup96u5f-e4e5",
+      "old_values": {
+        "isActive": true
+      },
+      "new_values": {
+        "isActive": false
+      },
+      "created_at": "2026-10-01T08:09:30.151Z"
+    }
+  ],
+  "question_import_jobs": []
+}

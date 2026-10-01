@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 126" width="100%" height="100%" fill="none">
+  <!-- FES Academy Brand Emblem Icon -->
+  <g id="fes-mark">
+    <!-- Top Ribbon: Teal -->
+    <path
+      d="M 4 44
+         L 4 20
+         C 4 8, 12 0, 26 0
+         L 88 32
+         L 88 70
+         L 4 44 Z"
+      fill="#007284"
+    />
+
+    <!-- Middle Ribbon: Golden Yellow -->
+    <path
+      d="M 25 74
+         L 25 61
+         C 25 54, 29 50, 39 54
+         L 88 77
+         L 88 98
+         L 25 74 Z"
+      fill="#f0ad25"
+    />
+
+    <!-- Bottom Ribbon: Warm Orange -->
+    <path
+      d="M 46 104
+         L 46 93
+         C 46 87, 50 84, 58 88
+         L 88 102
+         L 88 122
+         L 46 104 Z"
+      fill="#eb7526"
+    />
+  </g>
+</svg>
